@@ -1,0 +1,14 @@
+S = '12313'
+k=[]
+le = len(S)
+for j in range(le):
+    for length in range(le-j):
+        k.append(sorted(S[j:j+1+length]))
+print(k)
+cb = 0
+for p in k:
+    if len(p)>1:
+       if p[0] != p[1] :
+          cb = cb +1
+
+print(cb)
